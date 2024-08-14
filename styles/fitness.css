@@ -2,10 +2,13 @@
 
 @import url('https://fonts.cdnfonts.com/css/miama');
 
+
+
 *{
     box-sizing: border-box;
     margin: 0px;
 }
+
 
 body{
 
@@ -14,8 +17,8 @@ body{
     font-family: "Inter", sans-serif;
     font-style: normal;
     line-height: normal;
-    
 }
+
 
 main{
     width: 100%;
@@ -27,6 +30,7 @@ main{
     padding-bottom: 100px;
 } 
 
+
 header{
     display: flex;
     flex-direction: column;
@@ -37,12 +41,12 @@ header{
     padding: 64px 0px;
 }
 
+
 nav{
     width: 73%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     
 }
 
@@ -57,13 +61,14 @@ nav{
 
 }
 
-.nav{
+.nav-options{
 
     display: flex;
     align-items: center;
     padding: 4px;
     gap: 47px;
     margin: 0px;
+
     border-radius: 39px;
     border: 1px solid rgba(255, 255, 255, 0.10);
 }
@@ -107,13 +112,11 @@ a {
     width: 73%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(425px,1fr));
-    /* padding-top: 57px; */
 
 } 
 
-.left{
+.banner-left{
     display: flex;
-    /* width: px; */
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
@@ -128,7 +131,7 @@ a {
     margin: 0px;
 }
 
-.pa{
+.p-16px{
     color: rgba(255, 255, 255, 0.50);
     font-size: 16px;
     font-weight: 400;
@@ -146,7 +149,7 @@ a {
 }
 
 
-.btn{
+.btn-primary{
     display: flex;
     align-items: center;
     gap: 14px;
@@ -174,7 +177,6 @@ button{
     font-style: normal;
     font-weight: 600;
     cursor: pointer;
-    /* line-height: 22px;  */
 }
 .join {
     border: none;
@@ -184,27 +186,25 @@ button{
 
 
 
-.br{
+.banner-right{
     display: grid;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(3,1fr);
 }
 
 
-.bimg{
+.banner-img{
     width: 349px;
     height: 580px;
     grid-area: 1/1/4/3;
  
 }
 
-.video{
+.video-tuto{
     grid-area: 3/1/3/2;
     display: flex;
     align-items: center;
     align-self: center;
-   
-    /* gap: 10px; */
     width: 206px;
     height: 96px;
 
@@ -262,10 +262,6 @@ button{
     font-size: 33px;
     font-weight: 900;
 }
-
-
-
-/* /* change habbit */
 
 .habbit{
     width: 73%;
@@ -336,11 +332,6 @@ button{
     font-weight: 400;
 }
 
-
-
-
-/* run */
-
 .run{
     width: 73%;
     display: grid;
@@ -349,7 +340,6 @@ button{
     justify-content: flex-end;
     align-items: center;
     gap: 38px;
-    /* align-self: stretch; */
 
     border-radius: 18px;
     background: #222;
@@ -360,27 +350,21 @@ button{
     display: flex;
     width: 91%;
     flex-direction: column;
-    /* align-items: flex-start; */
     gap: 34px;
 }
 
 .content div{
-    /* width: 71%; */
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     gap: 20px;
-    /* align-self: stretch; */
 }
 
 .content h1{
-    /* width: 443px;  */
     font-size: 48px;
     font-weight: 900;
 }
 
 .content p{
-    /* align-self: stretch; */
     color: rgba(255, 255, 255, 0.50);
     font-size: 16px;
     font-weight: 400;
@@ -395,4 +379,509 @@ button{
 
 #run2{
     display: none;
+}
+
+.bmi-title {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.bmi-title h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.bmi-title p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0px;
+}
+.bmi-cal {
+    width: 100%;
+    align-self: stretch;
+    background: #222;
+    padding: 40px 20px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+
+
+    width: 100%;
+    gap:60px;
+}
+
+.calculator h1 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+}
+
+.calculator p ,td{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    width: 90%;
+
+}
+select option{
+    background: rgba(255, 255, 255, 0.10);
+}
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* text-align: center; */
+    gap: 20px;
+}
+
+table {
+    margin: 0;
+    border-collapse: collapse;
+}
+
+th{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    height: 50px;
+    width: 400px;
+    text-align:left;
+}
+
+th,td{
+    padding-left: 20px;
+}
+
+
+.cal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+.cal h1 {
+    margin-bottom: 14px;
+    gap: 14px;
+}
+
+form {
+    margin-top:34px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin: 0px;
+
+}
+input,select{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    font-weight: 500;
+}
+input {
+    flex: 1;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+select {
+    flex: 1;
+    /* height: 52px; */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+#activity {
+    margin: 0px;
+    margin-bottom: 34px;
+}
+
+
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    width: 73%;
+    max-width: 1459px;
+    margin: 20px auto;
+}
+
+
+.fea{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+    flex: 1 0 0;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+}
+.fea-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    gap: 20px
+
+}
+.fea-pic{
+    font-size: 14px;
+    font-weight: 300;
+}
+.fea-con{
+    padding: 11% 1px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 18px;
+    font-weight: 400;
+}
+.fea img{
+    width: 180px;
+    height: 180px;
+    /* border-radius: 50%; */
+    border: 4px solid rgba(255, 255, 255, 0.10);
+}
+
+
+
+/* team member */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(323px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 73%;
+    max-width: 1391px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.team-mem {
+    display: grid;
+
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(5,1fr);
+    justify-items: start;
+    align-items: end;
+}
+.team-mem img{
+    grid-area: 1/1/6/6;
+}
+
+
+.team-mem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+.name {
+    grid-area: 2/1/3/4;
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.name h3 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.name p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.10);
+    padding: 40px 0;
+}
+
+#foot {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 76px;
+    width: 73%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.des {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.des h3 {
+    color: #E6533C;
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.des p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    width: 75%;
+}
+
+.get {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.get a{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+}
+.get h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+hr {
+    width: 80%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    margin: 40px auto;
+}
+
+#right {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 576px) {
+
+    body{
+        
+        gap:50px;
+    }
+
+    main{ 
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+    header{
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+
+    nav{
+        width: 100%;
+        padding: 20px;
+    }
+    .nav-options {
+        display: none;
+    }
+
+    #TMS {
+        display: block;
+        margin: 0px;
+
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 92%;
+    }
+
+    .banner-left {
+        width: 74%;
+        padding-top: 20px;
+    }
+    .banner-right{
+        width: 74%;
+    }
+    .h1-58px{
+        font-size: 50px;
+        margin: 0px;
+    }
+    .p-16px{
+        margin: 0px;
+    }
+
+    .btn-primary{
+        width: 100%;
+    }
+    #join1{
+        display: none;
+    }
+    #now{
+        display: block;
+    }
+    button{
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+    .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-tuto{
+        align-self: auto;
+        width: 100%;
+    }
+
+    .workout{
+        width: 100%;
+    }
+    .workout p{
+        margin: 16% 13px;
+        font-size: 14px;
+    }
+
+    .habbit{
+        width: 85%;
+    }
+    .habbit-text h1 {
+        font-size: 30px;
+    }
+
+    .habbit-text p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .img-con h3 {
+        font-size: 16px;
+    }
+
+    .img-con p {
+        font-size: 14px;
+    }
+
+    .run {
+        width: 85%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 32px 29px 32px;
+    }
+    .content{
+        width: 100%;
+    }
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    #brun{
+        width: 100%;
+    }
+   
+
+
+    .bmi-title{
+        width: 90%;
+    }
+    .bmi-title h1 {
+        font-size: 30px;
+    }
+
+    table,th,td{
+        width: 300px;
+    }
+    .bmi-title p {
+        font-size: 14px;
+        width: 294px;
+    }
+
+    .calculator {
+        grid-template-columns: 1fr;
+        justify-items: flex-start;
+    }
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .cal{
+        width: 100%;
+    }
+    .fea{
+        flex-direction: column;
+        text-align: center;
+        gap:0px;
+    }
+    .fea-pic h3 {
+        font-size: 20px;
+    }
+
+    .fea-con p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .team{
+        width: 90%;
+        padding: 20px 0px;
+    }
+
+    .team-mem{
+        justify-items: center;
+    }
+    .team-mem img{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 363px) {
+    .btn-primary{
+        flex-direction: column;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .cal{
+        width: 93%;
+    }
+    .team-mem{
+        width: 90%;
+    }
+
 }
